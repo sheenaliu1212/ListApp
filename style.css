@@ -1,0 +1,50 @@
+#app {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#taskInput {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer; /* 當鼠標懸停在按鈕上時，游標會變成手形，提示按鈕可點擊。 */
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff1a1a;
+}
+
+/* 當螢幕寬度小於 400px 時，將 #app 寬度設為 100%，並將左右 padding 設為 10px。 */
+@media (max-width: 400px) {
+  /* 讓應用程式寬度自適應螢幕並留出一些內邊距，防止內容過於貼近螢幕邊緣。 */
+  #app {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* 使輸入框寬度自適應螢幕大小，讓它在小螢幕上依然易於操作。 */
+  #taskInput {
+    width: 100%;
+  }
+}
